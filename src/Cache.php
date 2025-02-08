@@ -12,7 +12,7 @@ class Cache implements CacheInterface
      */
     private $yiiCache;
 
-    public function __construct(YiiCache $yiiCache = null)
+    public function __construct(?YiiCache $yiiCache = null)
     {
         if (! isset($yiiCache)) {
             $yiiCache = \Yii::$app->getCache();
