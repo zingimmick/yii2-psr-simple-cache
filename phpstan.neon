@@ -6,9 +6,8 @@ parameters:
     paths:
         - src
         - tests
-    excludePaths:
-        - src/DynamicSimpleCache.php
-        - src/SimpleCache.php
     ignoreErrors:
         - '#Call to an undefined method Zing\\Yii2PsrSimpleCache\\Tests\\CacheTest::setExpectedException\(\).#'
+        - '#Call to function method_exists\(\) with \$this\(Zing\\Yii2PsrSimpleCache\\Tests\\CacheTest\) and (.*?)expectException(.*?) will always evaluate to true.#'
+        - '#Method Zing\\Yii2PsrSimpleCache\\Cache::getMultiple\(\) should return iterable<string, mixed> but returns array.#'
         - '#Cannot call method add\(\) on DateTime\|false.#'
