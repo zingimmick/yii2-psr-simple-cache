@@ -3,7 +3,6 @@
 namespace Zing\Yii2PsrSimpleCache;
 
 use Psr\SimpleCache\CacheInterface;
-use yii\caching\CacheInterface as YiiCache;
 
 class Cache implements CacheInterface
 {
@@ -13,7 +12,7 @@ class Cache implements CacheInterface
     private $yiiCache;
 
     /**
-     * @param YiiCache|null $yiiCache
+     * @param \yii\caching\CacheInterface|null $yiiCache
      */
     public function __construct($yiiCache = null)
     {
