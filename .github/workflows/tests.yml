@@ -41,7 +41,7 @@ jobs:
 
       - if: matrix.php >= '7.0'
         name: Bump phpunit greater than 6.5
-        run: composer require phpunit/phpunit:'^6.5 || ^7.5 || ^8.5 || ^9.3.3 || ^10.0 || ^11.0' --no-update --dev
+        run: composer require phpunit/phpunit:'^6.5 || ^7.5 || ^8.5 || ^9.3.3 || ^10.0 || ^11.0 || ^12.0' --no-update --dev
 
       - if: matrix.php >= '7.2'
         name: Bump yii2 framework greater than 2.0.13
@@ -49,7 +49,7 @@ jobs:
 
       - if: matrix.php >= '7.3'
         name: Bump phpunit greater than 9.3.3
-        run: composer require phpunit/phpunit:'^9.3.3 || ^10.0 || ^11.0' --no-update --dev
+        run: composer require phpunit/phpunit:'^9.3.3 || ^10.0 || ^11.0 || ^12.0' --no-update --dev
 
       - name: Install dependencies
         uses: ramsey/composer-install@v3
