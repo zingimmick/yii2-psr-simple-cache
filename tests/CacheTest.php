@@ -12,7 +12,7 @@ final class CacheTest extends TestCase
     /**
      * @phpstan-return void
      */
-    public function testGet()
+    public function testGet() 
     {
         \defined('YII_ENABLE_ERROR_HANDLER') || \define('YII_ENABLE_ERROR_HANDLER', false);
         $this->mockApplication();
