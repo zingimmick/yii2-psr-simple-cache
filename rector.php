@@ -11,6 +11,6 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->sets([LevelSetList::UP_TO_PHP_54, PHPUnitSetList::PHPUNIT_CODE_QUALITY, RectorSetList::CUSTOM]);
     $rectorConfig->phpstanConfig(__DIR__ . '/phpstan.neon');
     $rectorConfig->parallel();
-    $rectorConfig->skip([GetMockBuilderGetMockToCreateMockRector::class])
+    $rectorConfig->skip([GetMockBuilderGetMockToCreateMockRector::class]);
     $rectorConfig->paths([__DIR__ . '/src', __DIR__ . '/tests', __DIR__ . '/ecs.php', __DIR__ . '/rector.php']);
 };
