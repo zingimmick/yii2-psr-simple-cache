@@ -11,3 +11,5 @@ parameters:
         - '#Call to function method_exists\(\) with \$this\(Zing\\Yii2PsrSimpleCache\\Tests\\CacheTest\) and (.*?)expectException(.*?) will always evaluate to true.#'
         - '#Method Zing\\Yii2PsrSimpleCache\\Cache::getMultiple\(\) should return iterable<string, mixed> but returns array.#'
         - '#Cannot call method add\(\) on DateTime\|false.#'
+        - '#Cannot call method getCache\(\) on yii\\console\\Application\|yii\\web\\Application<yii\\web\\IdentityInterface>\|null.#'
+        - '#Cannot call method setComponents\(\) on yii\\console\\Application\|yii\\web\\Application<yii\\web\\IdentityInterface>\|null.#'
